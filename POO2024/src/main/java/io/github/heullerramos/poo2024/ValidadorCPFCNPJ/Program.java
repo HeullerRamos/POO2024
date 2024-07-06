@@ -7,11 +7,18 @@ package io.github.heullerramos.poo2024.ValidadorCPFCNPJ;
  */
 public class Program {
     public static void main(String[] args) {
-         Cnpj c1 = new Cnpj();
+         CPF c1 = new CPF();
+         Cnpj c2 = new Cnpj();
         try{
-            c1.setCnpj(35017120000186L);
+            c1.setCpf(456789014L);
         }
-        catch(RuntimeException e){
+        catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        try{
+            c2.setCnpjString("35.017.120/0001-88");
+        }
+        catch(Exception e){
             System.out.println(e.getMessage());
         }
         
