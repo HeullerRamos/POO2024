@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package io.github.heullerramos.poo2024.PasseioCavaloComHeuristica;
 
 /**
@@ -9,5 +6,8 @@ package io.github.heullerramos.poo2024.PasseioCavaloComHeuristica;
  * @author heull
  */
 public class Program {
-    
+    public static void main(String[] args) {
+      PasseioCavaloComHeuristica passeio = new PasseioCavaloComHeuristica(4,4);
+      passeio.iniciarPasseio(); // Inicia o passeio
+  }
 }
